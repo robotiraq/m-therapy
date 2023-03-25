@@ -1,5 +1,5 @@
 <template>
-  <div class="home bg-slate-100">
+  <div class="home bg-slate-100 py-3">
     <div class="mx-6">
       <div class="grid grid-cols-5 items-center pt-3">
         <div class="col-span-3">
@@ -109,7 +109,7 @@
         </div>
       </div>
       <div
-        class="flex flex-row py-3 my-10 bg-red-50 rounded border border-red-300 items-center justify-center"
+        class="flex flex-row py-3 bg-red-50 rounded border border-red-300 items-center justify-center"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

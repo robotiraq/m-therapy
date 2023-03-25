@@ -22,9 +22,12 @@
       <router-link to="/therapist"
         ><h2 @click.self="closeModal">Therapist</h2></router-link
       >
-
-      <h2>About us</h2>
-      <h2>Plans & pricing</h2>
+      <router-link to="/about"
+        ><h2 @click.self="closeModal">About us</h2></router-link
+      >
+      <router-link to="/plans"
+        ><h2 @click.self="closeModal">Plans & pricing</h2></router-link
+      >
     </div>
   </div>
 </template>
