@@ -24,7 +24,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 p {
   font-size: 0.4rem;
   font-weight: 100;

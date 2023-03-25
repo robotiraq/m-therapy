@@ -17,8 +17,12 @@
       </div>
       <p>{{ header }}</p>
       <h2>Get Started</h2>
-      <h2>Home</h2>
-      <h2>Therapist</h2>
+      <router-link to="/"><h2 @click.self="closeModal">Home</h2></router-link>
+
+      <router-link to="/therapist"
+        ><h2 @click.self="closeModal">Therapist</h2></router-link
+      >
+
       <h2>About us</h2>
       <h2>Plans & pricing</h2>
     </div>
@@ -36,7 +40,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .modal {
   border-radius: 5px;
 }

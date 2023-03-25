@@ -56,14 +56,16 @@ export default {
     };
   },
   created() {
-    window.addEventListener("scroll", (event) => {
-      let scroll = window.top.pageYOffset;
-      if (scroll > 550) {
-        this.deleteModal = true;
-      } else {
-        this.deleteModal = false;
-      }
-    });
+    window.addEventListener("scroll", this.handleScroll);
+
+    // window.addEventListener("scroll", (event) => {
+    //   let scroll = window.top.pageYOffset;
+    //   if (scroll > 550) {
+    //     this.deleteModal = true;
+    //   } else {
+    //     this.deleteModal = false;
+    //   }
+    // });
     if (JSON.parse(localStorage.getItem("Language")) == null) {
       this.SelctedLanguage = {
         Name: "EN",
@@ -84,7 +86,17 @@ export default {
       localStorage.setItem("Language", JSON.stringify(selected));
       console.log(this.SelctedLanguage);
     },
-    deleteModalfu() {},
+    handleScroll() {
+      const distanceFromEnd = 60;
+      const bottomOfWindow =
+        document.documentElement.scrollTop + window.innerHeight >=
+        document.documentElement.offsetHeight - distanceFromEnd;
+      if (bottomOfWindow) {
+        this.deleteModal = true;
+      } else {
+        this.deleteModal = false;
+      }
+    },
   },
 };
 </script>
