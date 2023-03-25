@@ -1,20 +1,26 @@
 <template>
+  <Language></Language>
+
   <Navbar></Navbar>
   <!-- <nav><router-link to="/">Home</router-link> |</nav> -->
   <router-view />
+  <Footer></Footer>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
+import Language from "./components/Language.vue";
+
 export default {
   name: "App",
-  components: { Navbar },
+  components: { Navbar, Footer, Language },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
