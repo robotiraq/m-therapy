@@ -1,7 +1,10 @@
 <template>
   <div class="py-5 bg-white">
     <div class="flex flex-row justify-center items-center">
-      <img class="w-28" src="/images/Logo.png" alt="" />
+      <router-link to="/"
+        ><img class="w-28" src="/images/Logo.png" alt=""
+      /></router-link>
+
       <div class="px-6 absolute left-2">
         <svg
           @click="toggleModal"
