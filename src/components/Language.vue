@@ -7,7 +7,8 @@
     <div class="modal rounded p-2 bg-white flex flex-col items-start">
       <div v-if="showLanguage">
         <div
-          v-for="language in Languages"
+          v-for="(language, index) in Languages"
+          :key="index"
           @click="selectLanguage(language)"
           class="flex flex-row items-center my-4"
         >
@@ -47,16 +48,16 @@ export default {
     return {
       showLanguage: false,
       Languages: [
-        { Name: "EN", src: require("@/assets/USA.png"), id: "1" },
-        { Name: "AR", src: require("@/assets/Iraq.png"), id: "2" },
-        { Name: "KR", src: require("../assets/Kurd.png"), id: "3" },
+        { Name: 'EN', src: '/images/USA.png', id: '1' },
+        { Name: 'AR', src: '/images/Iraq.png', id: '2' },
+        { Name: 'KR', src: '/images/Kurd.png', id: '3' },
       ],
       SelctedLanguage: {},
       deleteModal: false,
     };
   },
   created() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
 
     // window.addEventListener("scroll", (event) => {
     //   let scroll = window.top.pageYOffset;
@@ -66,24 +67,24 @@ export default {
     //     this.deleteModal = false;
     //   }
     // });
-    if (JSON.parse(localStorage.getItem("Language")) == null) {
+    if (JSON.parse(localStorage.getItem('Language')) == null) {
       this.SelctedLanguage = {
-        Name: "EN",
-        src: require("@/assets/USA.png"),
-        id: "1",
+        Name: 'EN',
+        src: '/images/USA.png',
+        id: '1',
       };
-    } else this.SelctedLanguage = JSON.parse(localStorage.getItem("Language"));
+    } else this.SelctedLanguage = JSON.parse(localStorage.getItem('Language'));
   },
   methods: {
     closeModal() {
-      this.$emit("close");
+      this.$emit('close');
     },
     showLanguages() {
       this.showLanguage = !this.showLanguage;
     },
     selectLanguage(selected) {
       this.SelctedLanguage = selected;
-      localStorage.setItem("Language", JSON.stringify(selected));
+      localStorage.setItem('Language', JSON.stringify(selected));
       console.log(this.SelctedLanguage);
     },
     handleScroll() {

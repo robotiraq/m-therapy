@@ -52,7 +52,7 @@
           </button>
         </div>
         <div class="col-span-2">
-          <img src="../assets/Hero.png" alt="" />
+          <img src="/images/Hero.png" alt="" />
         </div>
       </div>
       <h2
@@ -73,7 +73,7 @@
           </p>
         </div>
         <div class="col-span-2">
-          <img src="../assets/1.png" alt="" />
+          <img src="/images/1.png" alt="" />
         </div>
       </div>
       <div class="grid grid-cols-5 items-center my-4">
@@ -90,7 +90,7 @@
           </p>
         </div>
         <div class="col-span-2 order-first">
-          <img src="../assets/2.png" alt="" />
+          <img src="/images/2.png" alt="" />
         </div>
       </div>
       <div class="grid grid-cols-5 items-center my-4">
@@ -105,7 +105,7 @@
           </p>
         </div>
         <div class="col-span-2">
-          <img src="../assets/3.png" alt="" />
+          <img src="/images/3.png" alt="" />
         </div>
       </div>
       <div
@@ -138,7 +138,7 @@
 
 <script>
 export default {
-  name: "HomeView",
+  name: 'HomeView',
   components: {},
 };
 </script>

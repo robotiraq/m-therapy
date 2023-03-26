@@ -2,7 +2,7 @@
   <div class="bg-gray-900 py-6">
     <div class="grid grid-cols-6 items-center mx-4 text-white">
       <div class="flex flex-col items-center col-span-2">
-        <img class="w-10" src="../assets/Logo2.png" alt="" />
+        <img class="w-10" src="/images/Logo2.png" alt="" />
         <h1 class="">M.Therapy</h1>
         <p class="">2022 © Copyright M. therapy Inc. All rights reserved.</p>
       </div>

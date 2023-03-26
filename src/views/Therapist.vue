@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="col-span-2">
-          <img src="../assets/therapist.png" alt="" />
+          <img src="/images/therapist.png" alt="" />
         </div>
       </div>
       <div class="text-center py-4">
@@ -47,22 +47,22 @@ export default {
     return {
       Therapists: [
         {
-          name: "Karzan Jasim Mohammed",
-          degree: "M.S. in Psychotherapy and psychotraumatology",
-          src: require("@/assets/Karzan.png"),
-          id: "1",
+          name: 'Karzan Jasim Mohammed',
+          degree: 'M.S. in Psychotherapy and psychotraumatology',
+          src: '/images/Karzan.png',
+          id: '1',
         },
         {
-          name: "Yasser Saeed Obaid",
-          degree: "B.S. in psychology",
-          src: require("@/assets/Yasser.png"),
-          id: "2",
+          name: 'Yasser Saeed Obaid',
+          degree: 'B.S. in psychology',
+          src: '/images/Yasser.png',
+          id: '2',
         },
         {
-          name: "Sarwar A. Muhammed",
-          degree: "M.S. in psychotherapy",
-          src: require("@/assets/Sarwar.png"),
-          id: "3",
+          name: 'Sarwar A. Muhammed',
+          degree: 'M.S. in psychotherapy',
+          src: '/images/Sarwar.png',
+          id: '3',
         },
       ],
     };
