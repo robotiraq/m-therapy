@@ -1,8 +1,8 @@
 <template>
-  <div v-for="question in questions">
+  <div v-for="(question, index) in questions" :key="index">
     <div
-      class="text-left bg-slate-100 py-2 px-4"
-      :class="{ 'bg-gray-200': question.show }"
+      class="text-left py-2 px-4"
+      :class="{ 'bg-gray-200': question.show, 'bg-slate-100': !question.show }"
     >
       <div class="flex flex-row" @click="closeAnswer(question)">
         <h3 class="mr-2 text-sky-800">Q.{{ question.question }}?</h3>
@@ -10,8 +10,8 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          class="w-3 h-3 rotate-180"
-          :class="{ 'rotate-0': question.show }"
+          class="w-3 h-3 transition-all"
+          :class="{ 'rotate-180': question.show, 'rotate-0': !question.show }"
         >
           <path
             fill-rule="evenodd"
