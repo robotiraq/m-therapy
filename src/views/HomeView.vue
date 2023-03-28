@@ -2,114 +2,120 @@
   <div class="home bg-slate-100 py-3">
     <div class="mx-6">
       <div class="grid grid-cols-5 items-center pt-3">
-        <div class="col-span-3">
-          <div
-            class="font-bold bg-gradient-to-r from-sky-800 to-red-400 inline-block text-transparent bg-clip-text"
-          >
-            <h1 class="">Accessible</h1>
-            <h3 class="">Every Where, Any time.</h3>
-          </div>
-          <div class="flex flex-row justify-around text-xs mt-2">
-            <div class="flex flex-row items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 text-green-500"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 12.75l6 6 9-13.5"
-                />
-              </svg>
-              <p>Reliable</p>
+        <div class="col-span-3 flex flex-col items-center">
+          <div class="">
+            <div
+              class="font-bold bg-gradient-to-r from-sky-800 to-red-400 inline-block text-transparent bg-clip-text"
+            >
+              <h1 class="text-3xl sm:text-5xl lg:text-6xl">
+                {{ $t("titles.accessible") }}
+              </h1>
+              <h3 class="text-sm sm:text-xl lg:text-2xl">
+                {{ $t("titles.everywhere") }}
+              </h3>
             </div>
-            <div class="flex flex-row items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 text-green-500"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 12.75l6 6 9-13.5"
-                />
-              </svg>
-              <p>Scientific proven methods</p>
+            <div
+              class="flex flex-col justify-around small-font mt-2 text-left text-[0.7rem] sm:text-lg sm:flex-row"
+            >
+              <div class="flex flex-row items-center sm:mr-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-6 sm:h-6 text-green-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+                {{ $t("titles.reliable") }}
+              </div>
+              <div class="flex flex-row items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-6 sm:h-6 text-green-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+                {{ $t("titles.scientific") }}
+              </div>
             </div>
           </div>
+
           <button
-            class="py-2 w-full bg-sky-900 text-white rounded mt-2 font-bold"
+            class="py-2 lg:px-8 px-4 bg-sky-900 text-white rounded mt-2 text-xs sm:text-base"
           >
-            Let’s start
+            {{ $t("titles.lets") }}
           </button>
         </div>
-        <div class="col-span-2">
+        <div class="col-span-2 max-w-xs">
           <img src="/images/Hero.png" alt="" />
         </div>
       </div>
       <h2
-        class="font-bold uppercase mt-10 bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
+        class="sm:text-2xl lg:text-3xl font-bold uppercase mt-10 bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
       >
-        How it works
+        {{ $t("titles.how-to") }}
       </h2>
-      <div class="grid grid-cols-5 items-center my-2">
-        <div class="text-left col-span-3">
+      <div class="grid grid-cols-5 items-center my-2 place-items-center">
+        <div class="text-left rtl:text-right md:text-center col-span-3">
           <h2
-            class="uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
+            class="sm:text-xl lg:text-2xl text-sm uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
           >
-            Get started
+            {{ $t("titles.get-started") }}
           </h2>
-          <p class="">
-            Simply answer a few questions to help us understand your mental
-            condition and provide you with the best consultation possible.
+          <p class="text-xs sm:text-sm lg:text-lg">
+            {{ $t("titles.get-started-p") }}
           </p>
         </div>
-        <div class="col-span-2">
+        <div class="col-span-2 max-w-xs">
           <img src="/images/1.png" alt="" />
         </div>
       </div>
-      <div class="grid grid-cols-5 items-center my-4">
-        <div class="text-left col-span-3">
+      <div class="grid grid-cols-5 items-center my-2 place-items-center">
+        <div class="text-left rtl:text-right md:text-center col-span-3">
           <h2
-            class="uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
+            class="sm:text-xl lg:text-2xl text-sm uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
           >
-            Therapist match
+            {{ $t("titles.therapist-match") }}
           </h2>
-          <p class="">
-            We will contact you to provide you with information about your
-            health and to recommend the ideal candidate for a consulting
-            session.
+          <p class="text-xs sm:text-sm lg:text-lg">
+            {{ $t("titles.therapist-match-p") }}
           </p>
         </div>
-        <div class="col-span-2 order-first">
+        <div class="col-span-2 order-first max-w-xs">
           <img src="/images/2.png" alt="" />
         </div>
       </div>
-      <div class="grid grid-cols-5 items-center my-4">
-        <div class="text-left col-span-3">
+      <div class="grid grid-cols-5 items-center my-2 place-items-center">
+        <div class="text-left rtl:text-right md:text-center col-span-3">
           <h2
-            class="uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
+            class="sm:text-xl lg:text-2xl text-sm uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
           >
-            at your convenience
+            {{ $t("titles.at-your-convenience") }}
           </h2>
-          <p class="">
-            Feel cosy at your own place and have your session whenever you want.
+          <p class="text-xs sm:text-sm lg:text-lg">
+            {{ $t("titles.at-your-convenience-p") }}
           </p>
         </div>
-        <div class="col-span-2">
+        <div class="col-span-2 max-w-xs">
           <img src="/images/3.png" alt="" />
         </div>
       </div>
       <div
-        class="flex flex-row py-3 bg-red-50 rounded border border-red-300 items-center justify-center"
+        class="flex flex-row py-2 px-2 bg-red-50 rounded border border-red-300 items-center justify-center"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +123,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6 mx-3 text-red-600"
+          class="w-12 h-12 sm:w-10 sm:h-10 mx-2 text-red-600"
         >
           <path
             stroke-linecap="round"
@@ -126,10 +132,11 @@
           />
         </svg>
 
-        <p class="text-left">
-          If you are having crisis or suicidal thoughts we recommend you to call
-          the governmental emergency number
-          <span class="text-red-500 underline">80025050</span> for free.
+        <p
+          class="text-left rtl:text-right text-[0.6rem] sm:text-[0.7rem] lg:text-sm"
+        >
+          {{ $t("titles.attention") }}
+          <span class="text-red-500 underline">80025050</span>
         </p>
       </div>
     </div>
@@ -138,12 +145,12 @@
 
 <script>
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {},
 };
 </script>
 
-<style scoped>
+<!-- <style scoped>
 p {
   font-size: 0.5rem;
 }
@@ -160,4 +167,4 @@ h3 {
 button {
   font-size: 0.5rem;
 }
-</style>
+</style> -->

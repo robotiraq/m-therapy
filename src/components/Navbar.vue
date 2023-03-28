@@ -1,11 +1,36 @@
 <template>
   <div class="py-5 bg-white">
-    <div class="flex flex-row justify-center items-center">
+    <div
+      class="flex flex-row justify-center items-center md:justify-between md:px-6"
+    >
       <router-link to="/"
-        ><img class="w-28" src="/images/Logo.png" alt=""
+        ><img class="w-32 md:w-36" src="/images/Logo.png" alt=""
       /></router-link>
 
-      <div class="px-6 absolute left-2">
+      <div class="hidden md:flex md:flex-row lg:text-lg xl:text-2xl">
+        <router-link class="mr-4 xl:mr-8 rtl:ml-4" to="/"
+          ><h2 @click.self="closeModal">
+            {{ $t("sections.home") }}
+          </h2></router-link
+        >
+
+        <router-link class="mr-4 xl:mr-8 rtl:ml-4" to="/therapist"
+          ><h2 @click.self="closeModal">
+            {{ $t("sections.therapist") }}
+          </h2></router-link
+        >
+        <router-link class="mr-4 xl:mr-8 rtl:ml-4" to="/about"
+          ><h2 @click.self="closeModal">
+            {{ $t("sections.about") }}
+          </h2></router-link
+        >
+        <router-link to="/plans" class="mr-4 xl:mr-8 rtl:ml-4"
+          ><h2 @click.self="closeModal">
+            {{ $t("sections.plans") }}
+          </h2></router-link
+        >
+      </div>
+      <div class="px-6 absolute left-2 md:hidden">
         <svg
           @click="toggleModal"
           xmlns="http://www.w3.org/2000/svg"
@@ -22,6 +47,11 @@
           />
         </svg>
       </div>
+      <button
+        class="hidden py-2 px-3 text-xs lg:text-lg bg-sky-900 text-white rounded md:block"
+      >
+        {{ $t("titles.lets") }}
+      </button>
     </div>
   </div>
   <div v-show="showModal">
@@ -47,4 +77,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+p {
+  font-size: 0.5rem;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+</style>

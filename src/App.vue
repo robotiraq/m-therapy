@@ -1,5 +1,5 @@
 <template>
-  <Language></Language>
+  <Language ltr></Language>
 
   <Navbar></Navbar>
 

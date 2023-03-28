@@ -17,16 +17,26 @@
       </div>
       <p>{{ header }}</p>
       <h2>Get Started</h2>
-      <router-link to="/"><h2 @click.self="closeModal">Home</h2></router-link>
+      <router-link to="/"
+        ><h2 @click.self="closeModal">
+          {{ $t("sections.home") }}
+        </h2></router-link
+      >
 
       <router-link to="/therapist"
-        ><h2 @click.self="closeModal">Therapist</h2></router-link
+        ><h2 @click.self="closeModal">
+          {{ $t("sections.therapist") }}
+        </h2></router-link
       >
       <router-link to="/about"
-        ><h2 @click.self="closeModal">About us</h2></router-link
+        ><h2 @click.self="closeModal">
+          {{ $t("sections.about") }}
+        </h2></router-link
       >
       <router-link to="/plans"
-        ><h2 @click.self="closeModal">Plans & pricing</h2></router-link
+        ><h2 @click.self="closeModal">
+          {{ $t("sections.plans") }}
+        </h2></router-link
       >
     </div>
   </div>
