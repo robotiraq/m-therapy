@@ -92,7 +92,6 @@ export default {
       this.$emit("rotate");
     },
     selectLanguage(selected) {
-      console.log(selected);
       this.SelctedLanguage = selected;
       setI18nLanguage({ global: this.$i18n }, this.SelctedLanguage.Name);
       loadLocaleMessages({ global: this.$i18n }, this.SelctedLanguage.Name);
