@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 py-6">
+  <div class="bg-gray-900 py-6 relative xl:static" style="z-index: 9999999">
     <div
       class="grid grid-cols-6 items-center place-items-center mx-4 text-white"
     >
