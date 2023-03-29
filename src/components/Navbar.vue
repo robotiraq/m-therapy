@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5 bg-white">
+  <div class="py-5 max-w-[1920px] lg:m-auto bg-white">
     <div
       class="flex flex-row justify-center items-center md:justify-between md:px-6"
     >
@@ -47,11 +47,16 @@
           />
         </svg>
       </div>
-      <button
-        class="hidden py-2 px-3 text-xs lg:text-lg bg-sky-900 text-white rounded md:block"
+      <a
+        href="https://docs.google.com/forms/d/1ELuxtD_j-AWxS_NfjayKb7lErFgvjzknvTnlboCQbuA/viewform?fbclid=IwAR0hLg1F_1JFRZMYXh2xnou63t04MRuY8RC_brNlLHcU4ovfQsn8couJOOM&edit_requested=true"
+        target="_blank"
       >
-        {{ $t("titles.lets") }}
-      </button>
+        <button
+          class="hidden py-2 px-3 text-xs lg:text-lg bg-sky-900 text-white rounded md:block"
+        >
+          {{ $t("titles.lets") }}
+        </button>
+      </a>
     </div>
   </div>
   <div v-show="showModal">

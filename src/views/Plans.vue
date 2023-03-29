@@ -3,51 +3,48 @@
     <div class="mx-6 h-screen">
       <div class="text-center py-4">
         <h2
-          class="font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
+          class="font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent text-xl md:text-3xl"
         >
-          Made with love
+          {{ $t("about-us.made") }}
         </h2>
 
-        <p class="">
-          We've committed to making our services comfortable for you. So let us
-          work together to make your life better.
+        <p class="text-sm md:text-xl">
+          {{ $t("about-us.made-p2") }}
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-3 mx-2 text-center">
+      <h2
+        class="font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent text-xl md:text-3xl mb-2"
+      >
+        {{ $t("plans.plans") }}
+      </h2>
+      <div
+        class="grid grid-rows-2 gap-3 lg:gap- px-12 lg:px-24 mx-2 text-center md:grid-cols-2 md:grid-rows-none pb-4"
+      >
         <div
-          class="uppercase px-3 flex flex-col items-center justify-around bg-sky-900 text-white rounded h-52"
+          class="uppercase px-3 flex flex-col items-center justify-around bg-sky-900 text-white rounded h-56 md:h-96 lg:h-[600px]"
         >
-          <div class="flex flex-row items-center">
-            <h2 class="mr-2 font-bold">one</h2>
-            <h3 class="font-light text-xs">session</h3>
+          <div class="flex flex-row items-center text-xs lg:text-lg">
+            <h2 class="mr-2 font-bold">{{ $t("plans.one") }}</h2>
+            <h3 class="font-light">{{ $t("plans.session") }}</h3>
           </div>
-          <div class="font-bold">
-            <h2>20,000 IQD</h2>
+          <div class="font-bold text-lg lg:text-3xl">
+            <h2>20,000 {{ $t("plans.iqd") }}</h2>
           </div>
-          <p>Best option for You to get the best Consultation.</p>
+          <p class="text-xs lg:text-lg">{{ $t("plans.plan-1") }}</p>
         </div>
         <div
-          class="uppercase px-3 flex flex-col items-center justify-around bg-lime-900 text-white rounded h-52"
+          class="uppercase px-3 flex flex-col items-center justify-around bg-lime-900 text-white rounded"
         >
-          <div class="flex flex-row items-center">
-            <h2 class="mr-2 font-bold">Five</h2>
-            <h3 class="font-light text-xs">session</h3>
+          <div class="flex flex-row items-center text-xs lg:text-lg">
+            <h2 class="mr-2 font-bold">{{ $t("plans.five") }}</h2>
+            <h3 class="font-light">{{ $t("plans.session") }}</h3>
           </div>
-          <div class="font-bold">
-            <h2>80,000 IQD</h2>
+          <div class="font-bold text-lg lg:text-3xl">
+            <h2>80,000 {{ $t("plans.iqd") }}</h2>
           </div>
-          <p>Best option for You to keep up with your health.</p>
+          <p class="text-xs lg:text-lg">{{ $t("plans.plan-2") }}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-h1 {
-  font-size: 24px;
-}
-p {
-  font-size: 6px;
-}
-</style>

@@ -1,6 +1,6 @@
 <template>
   <div class="home bg-slate-100 py-3">
-    <div class="mx-6">
+    <div class="mx-20 md:mx-12">
       <div class="grid grid-cols-5 items-center pt-3">
         <div class="col-span-3 flex flex-col items-center">
           <div class="">
@@ -53,14 +53,18 @@
               </div>
             </div>
           </div>
-
-          <button
-            class="py-2 lg:px-8 px-4 bg-sky-900 text-white rounded mt-2 text-xs sm:text-base"
+          <a
+            href="https://docs.google.com/forms/d/1ELuxtD_j-AWxS_NfjayKb7lErFgvjzknvTnlboCQbuA/viewform?fbclid=IwAR0hLg1F_1JFRZMYXh2xnou63t04MRuY8RC_brNlLHcU4ovfQsn8couJOOM&edit_requested=true"
+            target="_blank"
           >
-            {{ $t("titles.lets") }}
-          </button>
+            <button
+              class="py-2 lg:px-8 px-4 bg-sky-900 text-white rounded mt-2 text-xs sm:text-base"
+            >
+              {{ $t("titles.lets") }}
+            </button>
+          </a>
         </div>
-        <div class="col-span-2 max-w-xs">
+        <div class="col-span-2 max-w-xs md:w-56 lg:w-72">
           <img src="/images/Hero.png" alt="" />
         </div>
       </div>
@@ -70,7 +74,7 @@
         {{ $t("titles.how-to") }}
       </h2>
       <div class="grid grid-cols-5 items-center my-2 place-items-center">
-        <div class="text-left rtl:text-right md:text-center col-span-3">
+        <div class="text-left rtl:text-right md:text-center col-span-3 w-full">
           <h2
             class="sm:text-xl lg:text-2xl text-sm uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
           >
@@ -80,12 +84,12 @@
             {{ $t("titles.get-started-p") }}
           </p>
         </div>
-        <div class="col-span-2 max-w-xs">
+        <div class="col-span-2 max-w-xs md:w-36 lg:w-48">
           <img src="/images/1.png" alt="" />
         </div>
       </div>
       <div class="grid grid-cols-5 items-center my-2 place-items-center">
-        <div class="text-left rtl:text-right md:text-center col-span-3">
+        <div class="text-left rtl:text-right md:text-center col-span-3 w-full">
           <h2
             class="sm:text-xl lg:text-2xl text-sm uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
           >
@@ -95,12 +99,12 @@
             {{ $t("titles.therapist-match-p") }}
           </p>
         </div>
-        <div class="col-span-2 order-first max-w-xs">
+        <div class="col-span-2 order-first max-w-xs md:w-36 lg:w-56">
           <img src="/images/2.png" alt="" />
         </div>
       </div>
       <div class="grid grid-cols-5 items-center my-2 place-items-center">
-        <div class="text-left rtl:text-right md:text-center col-span-3">
+        <div class="text-left rtl:text-right md:text-center col-span-3 w-full">
           <h2
             class="sm:text-xl lg:text-2xl text-sm uppercase font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent"
           >
@@ -110,7 +114,7 @@
             {{ $t("titles.at-your-convenience-p") }}
           </p>
         </div>
-        <div class="col-span-2 max-w-xs">
+        <div class="col-span-2 max-w-xs md:w-44 lg:w-60">
           <img src="/images/3.png" alt="" />
         </div>
       </div>
@@ -131,7 +135,6 @@
             d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
           />
         </svg>
-
         <p
           class="text-left rtl:text-right text-[0.6rem] sm:text-[0.7rem] lg:text-sm"
         >
@@ -149,22 +152,3 @@ export default {
   components: {},
 };
 </script>
-
-<!-- <style scoped>
-p {
-  font-size: 0.5rem;
-}
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.1rem;
-}
-
-h3 {
-  font-size: 0.9rem;
-}
-button {
-  font-size: 0.5rem;
-}
-</style> -->

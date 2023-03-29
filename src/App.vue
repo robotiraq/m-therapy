@@ -1,9 +1,12 @@
 <template>
-  <Language ltr></Language>
-
   <Navbar></Navbar>
+  <div class="bg-slate-100">
+    <div class="max-w-[1920px] lg:m-auto">
+      <Language ltr></Language>
 
-  <router-view />
+      <router-view />
+    </div>
+  </div>
   <Footer></Footer>
 </template>
 

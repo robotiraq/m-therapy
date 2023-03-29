@@ -1,16 +1,28 @@
 <template>
+  <div class="bg-slate-100 pb-4">
+    <h2
+      class="capitalize font-bold bg-gradient-to-r bg-clip-text from-sky-800 to-red-400 inline-block text-transparent text-lg mt-8 md:text-2xl"
+    >
+      {{ $t("faq.faq") }}
+    </h2>
+  </div>
   <div v-for="(question, index) in questions" :key="index">
     <div
-      class="text-left py-2 px-4"
+      class="text-left py-2 px-4 cursor-pointer"
       :class="{ 'bg-gray-200': question.show, 'bg-slate-100': !question.show }"
     >
-      <div class="flex flex-row" @click="closeAnswer(question)">
-        <h3 class="mr-2 text-sky-800">Q.{{ question.question }}?</h3>
+      <div
+        class="flex flex-row text-base items-center"
+        @click="closeAnswer(question)"
+      >
+        <h3 class="mr-2 text-sky-800 capitalize">
+          {{ $t("faq.q") }}.{{ $t(question.question) }} {{ $t("faq.mark") }}
+        </h3>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          class="w-3 h-3 transition-all"
+          class="w-4 h-4 transition-all"
           :class="{ 'rotate-180': question.show, 'rotate-0': !question.show }"
         >
           <path
@@ -20,7 +32,11 @@
           />
         </svg>
       </div>
-      <p v-show="question.show" v-html="question.answers"></p>
+      <p
+        class="rtl:text-right text-sm capitalize"
+        v-show="question.show"
+        v-html="$t(question.answers)"
+      ></p>
     </div>
   </div>
 </template>
@@ -30,25 +46,22 @@ export default {
   data() {
     return {
       questions: [
-        { question: "What is M.Therapy", answers: "TBD", show: true },
+        { question: "faq.q1", answers: "faq.a1", show: true },
         {
-          question: "How M.Therapy will help you",
-          answers:
-            "M.therapy can assist you by analyzing your mental health and recommending the appropriate counsellor to talk with.",
+          question: "faq.q2",
+          answers: "faq.a2",
           show: false,
         },
-        { question: "Is there in-person session", answers: "TBD", show: false },
+        { question: "faq.q3", answers: "faq.a3", show: false },
         {
-          question: "How can I prepare for first session",
-          answers:
-            "Begin by completing the <a class='text-sky-800'>questionnaire</a>, and we will contact you as soon as possible.",
+          question: "faq.q4",
+          answers: "faq.a4",
           show: false,
         },
-        { question: "Are my data save on M.therapy", answers: "TBD" },
+        { question: "faq.q5", answers: "faq.a5" },
         {
-          question: "Can I use M.therapy for sever cases",
-          answers:
-            "M.therapy assists you by providing the finest mental health consultation; if you are having a serious situation, please call <a class='text-red-500 underline'>80025050</a>",
+          question: "faq.q6",
+          answers: "faq.a6",
           show: false,
         },
       ],
@@ -61,10 +74,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-p,
-h3 {
-  font-size: 10px;
-}
-</style>

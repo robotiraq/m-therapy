@@ -4,7 +4,7 @@
     "everywhere": "Every Where, Any time.",
     "reliable": "Reliable",
     "scientific": "Scientific proven methods",
-    "lets": " Sign Now ",
+    "lets": " Get Started ",
     "how-to": "How it works",
     "get-started": " Get started ",
     "get-started-p": "Simply answer a few questions to help us understand your mental condition and provide you with the best consultation possible.",
@@ -19,5 +19,57 @@
     "therapist": "Therapist",
     "about": "About us",
     "plans": "Plans & pricing"
+  },
+  "footer": {
+    "rights": "2023 © Copyright M. therapy Inc. All rights reserved.",
+    "contact": "Contact",
+    "support": "Support"
+  },
+  "therapist": {
+    "experienced": "Experienced Certified Reliable",
+    "meet": "Meet Our Talented Therapist",
+    "meet-p": "Our therapists are selected based on their effectiveness, and they are all certified and highly qualified",
+    "name-karzan": "Karzan Jasim Mohammed",
+    "name-yasser": "Yasser Saeed Obaid",
+    "name-sarwar": "Sarwar A. Muhammed",
+    "degree-karzan": "M.S. in Psychotherapy and psychotraumatology",
+    "degree-yasser": "B.S. in psychology",
+    "degree-sarwar": "M.S. in psychotherapy"
+  },
+  "about-us": {
+    "made": "Made with love",
+    "made-p1": "Our mission is to bring everyone's mental health to its peak.",
+    "made-p2": "We've committed to making our services comfortable for you. So let us work together to make your life better.",
+    "why": "Why M.therapy!",
+    "why-1": "Licensed therapist",
+    "why-2": "Anywhere, Anytime",
+    "why-3": "Support"
+  },
+  "faq": {
+    "faq": "frequently asked questions",
+    "q": "Q",
+    "mark": "?",
+    "q1": "What is M.Therapy",
+    "a1": "M.therapy is a platform that can help you find the finest mental health consultation.",
+    "q2": "How M.Therapy will help you",
+    "a2": "M.therapy can assist you by analyzing your mental health and recommending the appropriate counsellor to talk with.",
+    "q3": "Is there in-person session",
+    "a3": "There are currently no in-person sessions, however this may change soon.",
+    "q4": "How can I prepare for first session",
+    "a4": "Begin by comp leting the <a class='text-sky-800 font-bold' href='https://docs.google.com/forms/d/1ELuxtD_j-AWxS_NfjayKb7lErFgvjzknvTnlboCQbuA/viewform?fbclid=IwAR0hLg1F_1JFRZMYXh2xnou63t04MRuY8RC_brNlLHcU4ovfQsn8couJOOM&edit_requested=true' target='_blank'>questionnaire</a>, and we will contact you as soon as possible.",
+    "q5": "Are my data save on M.therapy",
+    "a5": "M.therapy ensures that your data is kept private and never falls into anyones hands.",
+    "q6": "Can I use M.therapy for sever cases",
+    "a6": "M.therapy assists you by providing the finest mental health consultation; if you are having a serious situation, please call <a class='text-red-500 underline'>80025050</a>"
+  },
+  "plans": {
+    "plans": "Plans",
+    "one": "One",
+    "five": "Five",
+    "session": "Session",
+    "sessions": "Sessions",
+    "iqd": "IQD",
+    "plan-1": "Best option for You to get the best Consultation.",
+    "plan-2": "Best option for You to keep up with your health."
   }
 }
