@@ -19,7 +19,7 @@
       <a
         href="https://docs.google.com/forms/d/1ELuxtD_j-AWxS_NfjayKb7lErFgvjzknvTnlboCQbuA/viewform?fbclid=IwAR0hLg1F_1JFRZMYXh2xnou63t04MRuY8RC_brNlLHcU4ovfQsn8couJOOM&edit_requested=true"
       >
-        <h2>Get Started</h2>
+        <h2>{{ $t("titles.lets") }}</h2>
       </a>
       <router-link to="/"
         ><h2 @click.self="closeModal">
