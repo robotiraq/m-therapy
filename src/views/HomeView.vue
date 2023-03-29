@@ -1,6 +1,6 @@
 <template>
   <div class="home bg-slate-100 py-3">
-    <div class="mx-20 md:mx-12">
+    <div class="mx-6 md:mx-12">
       <div class="grid grid-cols-5 items-center pt-3">
         <div class="col-span-3 flex flex-col items-center">
           <div class="">
