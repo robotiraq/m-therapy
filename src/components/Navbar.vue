@@ -8,23 +8,47 @@
       /></router-link>
 
       <div class="hidden md:flex md:flex-row lg:text-lg xl:text-2xl">
-        <router-link class="mr-4 xl:mr-8 rtl:ml-4" to="/"
+        <router-link
+          class="mr-4 xl:mr-8 rtl:ml-4"
+          :class="{
+            'border-b-2 border-blue-500 border-opacity-70 ':
+              $route.name == 'home',
+          }"
+          to="/"
           ><h2 @click.self="closeModal">
             {{ $t("sections.home") }}
           </h2></router-link
         >
 
-        <router-link class="mr-4 xl:mr-8 rtl:ml-4" to="/therapist"
+        <router-link
+          class="mr-4 xl:mr-8 rtl:ml-4"
+          :class="{
+            'border-b-2 border-blue-500 border-opacity-70':
+              $route.name == 'therapist',
+          }"
+          to="/therapist"
           ><h2 @click.self="closeModal">
             {{ $t("sections.therapist") }}
           </h2></router-link
         >
-        <router-link class="mr-4 xl:mr-8 rtl:ml-4" to="/about"
+        <router-link
+          class="mr-4 xl:mr-8 rtl:ml-4"
+          :class="{
+            'border-b-2 border-blue-500 border-opacity-70':
+              $route.name == 'about',
+          }"
+          to="/about"
           ><h2 @click.self="closeModal">
             {{ $t("sections.about") }}
           </h2></router-link
         >
-        <router-link to="/plans" class="mr-4 xl:mr-8 rtl:ml-4"
+        <router-link
+          to="/plans"
+          class="mr-4 xl:mr-8 rtl:ml-4"
+          :class="{
+            'border-b-2 border-blue-500 border-opacity-70':
+              $route.name == 'plans',
+          }"
           ><h2 @click.self="closeModal">
             {{ $t("sections.plans") }}
           </h2></router-link

@@ -22,23 +22,43 @@
         <h2>{{ $t("titles.lets") }}</h2>
       </a>
       <router-link to="/"
-        ><h2 @click.self="closeModal">
+        ><h2
+          @click.self="closeModal"
+          :class="{
+            'font-bold': $route.name == 'home',
+          }"
+        >
           {{ $t("sections.home") }}
         </h2></router-link
       >
 
       <router-link to="/therapist"
-        ><h2 @click.self="closeModal">
+        ><h2
+          @click.self="closeModal"
+          :class="{
+            'font-bold': $route.name == 'therapist',
+          }"
+        >
           {{ $t("sections.therapist") }}
         </h2></router-link
       >
       <router-link to="/about"
-        ><h2 @click.self="closeModal">
+        ><h2
+          @click.self="closeModal"
+          :class="{
+            'font-bold': $route.name == 'about',
+          }"
+        >
           {{ $t("sections.about") }}
         </h2></router-link
       >
       <router-link to="/plans"
-        ><h2 @click.self="closeModal">
+        ><h2
+          @click.self="closeModal"
+          :class="{
+            'font-bold': $route.name == 'plans',
+          }"
+        >
           {{ $t("sections.plans") }}
         </h2></router-link
       >
